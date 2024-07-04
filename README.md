@@ -18,7 +18,7 @@ This website contains minigames like breakout , flappy bird and snake .
 2. Navigate to the project directory.
 cd FunFlash
 
-3. Open `home.html` in your preferred web browser.
+3. Open `index.html` in your preferred web browser.
 
 ## How to Play
 1. Open the website in a web browser.
