@@ -1,0 +1,120 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://i.ytimg.com/vi/wVCuNtZNBH4/maxresdefault.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+
+
+.header{
+    margin: auto;
+    margin-top: 0.5rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+#container{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+#instructions{
+    width: 80%;
+    font-size: 30px;
+    align-items: flex-start;
+    color: aliceblue;
+    padding: 5rem;
+}
+#inslines{
+    font-size: 25px;
+}
+
+#board {
+    /* background-color: skyblue; */
+    background-image: url("./flappybirdbg.png");
+} 
+
+.back-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: #25648f;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px #0c1886;
+    text-transform: uppercase;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.back-button:hover {
+    background-color: #e63e00;
+    box-shadow: 0 6px #d14300;
+    transform: translateY(-2px);
+}
+
+.back-button:active {
+    background-color: #d14300;
+    box-shadow: 0 2px #d14300;
+    transform: translateY(2px);
+}
+
+@media (max-width: 1000px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 726px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        text-align: center;
+        font-size: 30px;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 482px){
+    #content{
+        justify-content: right;
+        padding: 0rem;
+    }
+}

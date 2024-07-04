@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://i.ytimg.com/vi/wVCuNtZNBH4/maxresdefault.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative; 
+    min-height: 100vh; 
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.header {
+    margin-top: 15px;
+    font-size: 70px;
+    color: aliceblue;
+    margin-bottom: 1.5rem;
+}
+
+#content {
+    display: flex;
+    margin-left: 2.5rem;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    color: aliceblue;
+    gap:4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+#board {
+    background-image: linear-gradient(rgb(45, 157, 190), rgb(22, 32, 65));
+    border-top: 5px solid rgb(28, 40, 110);
+    border-left: 5px solid  rgb(28, 40, 110);
+    border-right: 5px solid  rgb(28, 40, 110);
+}
+
+#instructions {
+    width: 80%;
+    max-width: 600px;
+    font-size: 25px;
+    color: aliceblue;
+    padding: 2rem;
+    /*background: rgba(0, 0, 0, 0.6);*/
+    border-radius: 8px;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.back-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: #25648f;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px #0c1886;
+    text-transform: uppercase;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.back-button:hover {
+    background-color: #e63e00;
+    box-shadow: 0 6px #d14300;
+    transform: translateY(-2px);
+}
+
+.back-button:active {
+    background-color: #d14300;
+    box-shadow: 0 2px #d14300;
+    transform: translateY(2px);
+}
+
+
+@media screen and (max-width: 1060px)
+{
+    #content{
+        display:flex;
+        flex-direction: column;
+    }
+}
